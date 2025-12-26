@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio | Rachel</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- NAV -->
+  <header class="site-header">
+    <nav class="navbar container">
+      <a class="brand" href="#top" aria-label="Ir al inicio">
+        <span class="emoji" aria-hidden="true">✨</span>
+        <span class="brand-text">RM</span>
+      </a>
+
+      <!-- Toggle móvil -->
+      <input class="nav-toggle" type="checkbox" id="nav-toggle" />
+      <label class="nav-toggle-btn" for="nav-toggle" aria-label="Abrir/Cerrar menú">
+        <span class="menu-open" aria-hidden="true">☰</span>
+        <span class="menu-close" aria-hidden="true">✕</span>
+      </label>
+
+      <!-- Desktop -->
+      <div class="nav-desktop">
+        <ul class="nav-links">
+          <li><a href="#about">Sobre mí</a></li>
+          <li><a href="#skills">Tecnologías</a></li>
+          <li><a href="#projects">Proyectos</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+
+        <a class="btn btn-outline" href="resume.pdf" target="_blank" rel="noopener">
+          Currículum
+        </a>
+      </div>
+
+      <!-- Mobile -->
+      <div class="nav-mobile glass-card">
+        <ul class="nav-mobile-links">
+          <li><a href="#about">Sobre mí</a></li>
+          <li><a href="#skills">Tecnologías</a></li>
+          <li><a href="#projects">Proyectos</a></li>
+          <li><a href="#contact">Contacto</a></li>
+          <li class="nav-mobile-cta">
+            <a class="btn btn-primary" href="resume.pdf" target="_blank" rel="noopener">
+              Currículum
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero floral-bg">
+      <div class="blob blob-1" aria-hidden="true"></div>
+      <div class="blob blob-2" aria-hidden="true"></div>
+      <div class="blob blob-3" aria-hidden="true"></div>
+
+      <div class="hero-content container">
+        <p class="kicker animate-fade-up">¡Hola! Soy</p>
+
+        <h1 class="hero-title animate-fade-up delay-1">
+          <span class="text-foreground">Rachel </span>
+          <span class="text-gradient">Mojena</span>
+        </h1>
+
+        <p class="hero-subtitle muted animate-fade-up delay-2">
+          Desarrolladora Web Full Stack
+        </p>
+
+        <p class="hero-lead muted animate-fade-up delay-3">
+          Creo experiencias digitales excepcionales con código limpio y diseño moderno.
+          Especializada en React, Angular y tecnologías Node.
+        </p>
+
+        <div class="hero-social animate-fade-up delay-4">
+          <a class="icon-btn" href="https://github.com/Ray-M05" target="_blank" rel="noopener" aria-label="GitHub">
+            <span class="emoji" aria-hidden="true">🐙</span>
+          </a>
+          <a class="icon-btn" href="https://linkedin.com/in/rachel-mojena" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <span class="emoji" aria-hidden="true">💼</span>
+          </a>
+          <a class="icon-btn" href="mailto:rachelmojena@gmail.com" aria-label="Enviar email">
+            <span class="emoji" aria-hidden="true">✉️</span>
+          </a>
+        </div>
+
+        <div class="hero-footnote muted animate-fade-up delay-5">
+          <span class="emoji" aria-hidden="true">❤️</span>
+          <span>Creando con pasión y dedicación</span>
+        </div>
+
+        <a class="hero-down" href="#about" aria-label="Bajar a Sobre mí">
+          <span class="emoji" aria-hidden="true">⌄</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container narrow">
+        <h2 class="section-title">
+          <span class="emoji" aria-hidden="true">✨</span>
+          Sobre mí
+        </h2>
+
+        <div class="about-grid">
+          <div class="about-text">
+            <p class="muted">
+              Soy una desarrolladora web apasionada con más de 2 años de experiencia creando
+              aplicaciones web modernas y escalables. Me especializo en el desarrollo frontend
+              con React y Angular, aunque también disfruto trabajando en el backend con Node.js
+              y bases de datos.
+            </p>
+            <p class="muted">
+              Mi enfoque se centra en escribir código limpio, mantenible y en crear experiencias
+              de usuario excepcionales. Siempre estoy aprendiendo nuevas tecnologías y mejorando
+              mis habilidades.
+            </p>
+            <p class="muted">
+              Cuando no estoy programando, me gusta explorar nuevas herramientas de desarrollo.
+            </p>
+          </div>
+
+          <div class="about-visual">
+            <div class="avatar-wrap">
+              <div class="glass-card hover-lift avatar-card">
+                <div class="avatar-frame">
+                  <div class="avatar-bubble">
+                    <span class="emoji" aria-hidden="true">👩‍💻</span>
+                  </div>
+                </div>
+              </div>
+              <div class="avatar-glow" aria-hidden="true"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section floral-bg">
+      <div class="container narrow">
+        <h2 class="section-title">
+          <span class="emoji" aria-hidden="true">💻</span>
+          Tecnologías
+        </h2>
+
+        <div class="skills-grid">
+          <article class="glass-card hover-lift skill-card">
+            <header class="skill-head">
+              <span class="emoji" aria-hidden="true">🎨</span>
+              <h3>Frontend</h3>
+            </header>
+            <ul class="bullet-list">
+              <li><span class="dot"></span>React</li>
+              <li><span class="dot"></span>Angular</li>
+              <li><span class="dot"></span>Next.js</li>
+              <li><span class="dot"></span>Tailwind CSS</li>
+            </ul>
+          </article>
+
+          <article class="glass-card hover-lift skill-card">
+            <header class="skill-head">
+              <span class="emoji" aria-hidden="true">🗄️</span>
+              <h3>Backend</h3>
+            </header>
+            <ul class="bullet-list">
+              <li><span class="dot"></span>Node.js</li>
+              <li><span class="dot"></span>Express</li>
+              <li><span class="dot"></span>MySQL</li>
+              <li><span class="dot"></span>Python</li>
+              <li><span class="dot"></span>C++</li>
+              <li><span class="dot"></span>C#</li>
+            </ul>
+          </article>
+
+          <article class="glass-card hover-lift skill-card">
+            <header class="skill-head">
+              <span class="emoji" aria-hidden="true">🧰</span>
+              <h3>Herramientas</h3>
+            </header>
+            <ul class="bullet-list">
+              <li><span class="dot"></span>Git</li>
+              <li><span class="dot"></span>Docker</li>
+              <li><span class="dot"></span>Figma</li>
+              <li><span class="dot"></span>Jest</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="container wide">
+        <h2 class="section-title">
+          <span class="emoji" aria-hidden="true">📁</span>
+          Proyectos Destacados
+        </h2>
+
+        <div class="projects-grid">
+          <article class="glass-card hover-lift project-card animate-fade-in">
+            <div class="project-top">
+              <div class="project-icon" aria-hidden="true">📁</div>
+              <div class="project-links">
+                <a href="https://github.com" target="_blank" rel="noopener" aria-label="Código en GitHub">🐙</a>
+                <a href="https://example.com" target="_blank" rel="noopener" aria-label="Demo en vivo">🔗</a>
+              </div>
+            </div>
+            <h3>E-Commerce Dashboard</h3>
+            <p class="muted">
+              Panel de administración para tiendas online con analíticas en tiempo real,
+              gestión de inventario y reportes automatizados.
+            </p>
+            <div class="tag-row">
+              <span class="tag">React</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">Tailwind</span>
+              <span class="tag">Supabase</span>
+            </div>
+            <div class="stats">
+              <span class="stat"><span class="emoji" aria-hidden="true">⭐</span>128</span>
+              <span class="stat"><span class="emoji" aria-hidden="true">🍴</span>34</span>
+            </div>
+          </article>
+
+          <article class="glass-card hover-lift project-card animate-fade-in">
+            <div class="project-top">
+              <div class="project-icon" aria-hidden="true">📁</div>
+              <div class="project-links">
+                <a href="https://github.com" target="_blank" rel="noopener" aria-label="Código en GitHub">🐙</a>
+              </div>
+            </div>
+            <h3>Task Management API</h3>
+            <p class="muted">
+              API RESTful para gestión de tareas con autenticación JWT, roles de usuario y notificaciones en tiempo real.
+            </p>
+            <div class="tag-row">
+              <span class="tag">Node.js</span>
+              <span class="tag">Express</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">Redis</span>
+            </div>
+            <div class="stats">
+              <span class="stat"><span class="emoji" aria-hidden="true">⭐</span>89</span>
+              <span class="stat"><span class="emoji" aria-hidden="true">🍴</span>21</span>
+            </div>
+          </article>
+
+          <article class="glass-card hover-lift project-card animate-fade-in">
+            <div class="project-top">
+              <div class="project-icon" aria-hidden="true">📁</div>
+              <div class="project-links">
+                <a href="https://github.com" target="_blank" rel="noopener" aria-label="Código en GitHub">🐙</a>
+                <a href="https://example.com" target="_blank" rel="noopener" aria-label="Demo en vivo">🔗</a>
+              </div>
+            </div>
+            <h3>Weather App</h3>
+            <p class="muted">
+              Aplicación del clima con pronósticos de 7 días, mapas interactivos y alertas meteorológicas personalizadas.
+            </p>
+            <div class="tag-row">
+              <span class="tag">React</span>
+              <span class="tag">OpenWeather API</span>
+              <span class="tag">Mapbox</span>
+              <span class="tag">PWA</span>
+            </div>
+            <div class="stats">
+              <span class="stat"><span class="emoji" aria-hidden="true">⭐</span>56</span>
+              <span class="stat"><span class="emoji" aria-hidden="true">🍴</span>12</span>
+            </div>
+          </article>
+
+          <article class="glass-card hover-lift project-card animate-fade-in">
+            <div class="project-top">
+              <div class="project-icon" aria-hidden="true">📁</div>
+              <div class="project-links">
+                <a href="https://github.com" target="_blank" rel="noopener" aria-label="Código en GitHub">🐙</a>
+              </div>
+            </div>
+            <h3>Portfolio Generator</h3>
+            <p class="muted">
+              Herramienta CLI para generar portfolios personalizados a partir de datos de GitHub y configuración YAML.
+            </p>
+            <div class="tag-row">
+              <span class="tag">Node.js</span>
+              <span class="tag">Commander</span>
+              <span class="tag">Handlebars</span>
+              <span class="tag">GitHub API</span>
+            </div>
+            <div class="stats">
+              <span class="stat"><span class="emoji" aria-hidden="true">⭐</span>234</span>
+              <span class="stat"><span class="emoji" aria-hidden="true">🍴</span>67</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="projects-cta">
+          <a class="btn btn-primary" href="https://github.com/Ray-M05" target="_blank" rel="noopener">
+            Ver más en GitHub <span class="emoji" aria-hidden="true">🔗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section floral-bg">
+      <div class="container narrow center">
+        <h2 class="section-title center">
+          <span class="emoji" aria-hidden="true">❤️</span>
+          Contacto
+        </h2>
+
+        <p class="muted lead">
+          ¿Tienes un proyecto en mente?
+          Mi bandeja de entrada siempre está abierta.
+        </p>
+
+        <div class="contact-row">
+          <div class="contact-item">
+            <span class="contact-icon" aria-hidden="true">✉️</span>
+            <span>rachelmojena@gmail.com</span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon" aria-hidden="true">📍</span>
+            <span>La Habana, Cuba</span>
+          </div>
+        </div>
+
+        <a class="btn btn-primary glow-primary" href="mailto:rachelmojena@gmail.com">
+          <span class="emoji" aria-hidden="true">📨</span> Enviar mensaje
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container narrow footer-inner">
+
+      <div class="footer-links">
+        <a href="https://github.com/Ray-M05" target="_blank" rel="noopener" aria-label="GitHub">🐙</a>
+        <a href="https://linkedin.com/in/rachel-mojena" target="_blank" rel="noopener" aria-label="LinkedIn">💼</a>
+      </div>
+
+      <p class="muted footer-copy">© 2025</p>
+    </div>
+  </footer>
+</body>
+</html>
